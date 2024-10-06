@@ -1,39 +1,102 @@
+*{
+  background-color          : #1E1E1E;
+}
+
+/* Whole App Style */
 .App {
-  box-sizing: border-box;
-  text-align: center;
+  align-items               : center;
+  box-sizing                : border-box;
+  display                   : flex;
+  flex-direction            : column;
+  text-align                : center;
 }
 
+/* Header Style */
+.Header{
+  color                     : white;
+  font-size                 : 1.65rem;
+  margin                    : 1.5rem;
+}
+
+/* Main Calculator Styles */
 .Calc{
-  margin: auto;
-  margin-top: 1rem;
-  padding: .5rem;
-  width: 500px;
-  background-color: darkblue;
+  background-color          : #C5C9D2;
+  border                    : 1rem solid #313751;
+  border-radius             : 1.2rem;
+  margin                    : auto;
+  margin-top                : 1rem;
+  padding                   : 20px;
+  width                     : 500px;
 }
 
+/* Display Style */
 .Disp{
-  border: 1px solid black;
-  background-color: white !important;
-  font-size: 2rem;
-  height: 50px;
-  text-align: right;
-  margin-bottom: 2px;
+  background-color          : #74796B;
+  border-radius             : .4rem;
+  box-shadow                : 0px 0px 10px 0px rgb(0,0,0.1);
+  font-size                 : 2rem;
+  height                    : 50px;
+  margin-bottom             : 1rem;
+  padding-right             : 10px;
+  text-align                : right;
 }
 
+/* Button Styles */
 .Buttons{
-  display: grid;
-  gap: 2px;
-  grid-template-columns: repeat(4, 1fr);
-  height: 300px;
-  font-size: 2rem;
+  background-color          : #C5C9D2;
+  display                   : grid;
+  font-size                 : 2rem;
+  gap                       : 8px;
+  grid-template-columns     : repeat(4, 1fr);
+  height                    : 300px;
+  margin-bottom             : 1rem;
 }
 
 .Buttons > button {
-  background-color: lightgray;
-  border: 2px solid black;
-  font-size: 1em;
+  background-color          : whitesmoke;
+  border-radius             : 1rem;
+  font-size                 : 1em;
 }
 
 .Buttons > button:hover{
-  background-color: rgb(173, 170, 170)
+  background-color          : rgb(173, 170, 170);
+}
+
+/* Operators Styles */
+.Operators{
+  background-color          : #505863 !important;
+  color                     : whitesmoke !important;
+}
+
+.Operators:hover{
+  background-color          : #353a41 !important;
+  color                     : whitesmoke !important;
+}
+
+/* Clear Style */
+.Clear{
+  background-color          : #F48B4B !important;
+}
+
+.Clear:hover{
+  background-color          : #d47a42 !important;
+}
+
+/* Name Button Styles */
+.nameButton{
+  background-color          : #C5C9D2;
+}
+
+.nameButton > button{
+  background-color          : #505863;
+  border-radius             : .4rem;
+  color                     : whitesmoke;
+  font-size                 : 2rem;
+  height                    : 50px;
+  width                     : 500px;
+}
+
+.nameButton > button:hover{
+  background-color          : #353a41 !important;
+  color                     : whitesmoke !important;
 }
